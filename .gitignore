@@ -1,0 +1,23 @@
+# eclipse + vscode
+.project
+.classpath
+.settings/
+.metadata/
+.vscode/
+bin/
+*.launch
+
+# idea
+*.iws
+*.ipr
+*.iml
+.idea/
+out/
+
+# gradle
+.gradle/
+build/
+
+# other
+.DS_Store
+/run

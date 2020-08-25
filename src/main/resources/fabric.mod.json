@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "mod-of-fabric",
+  "version": "${version}",
+  "name": "Mod of Fabric",
+  "description": "A mod that makes a of b → b a.",
+  "authors": [
+    "sjx233"
+  ],
+  "contact": {
+    "sources": "https://github.com/sjx233/mod-of-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/mod-of-fabric/icon.png",
+  "environment": "client",
+  "mixins": [
+    "mod-of-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}

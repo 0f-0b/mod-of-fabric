@@ -1,0 +1,10 @@
+{
+  "package": "io.github.sjx233.modoffabric.mixin",
+  "client": [
+    "MixinLiteralText",
+    "MixinStringVisitable"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
