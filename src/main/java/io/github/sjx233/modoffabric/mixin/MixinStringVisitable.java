@@ -13,13 +13,13 @@ import net.minecraft.text.Style;
 public interface MixinStringVisitable {
   /**
    * @author sjx233
-   * @reason Cannot {@code @ModifyVariable}
+   * @reason Cannot {@code @ModifyVariable} in interface
    */
   @Overwrite
   static StringVisitable plain(String str) {
     return new StringVisitable() {
       public <T> Optional<T> visit(StringVisitable.Visitor<T> visitor) {
-        return visitor.accept(Of.transform(str));
+        return visitor.accept(str);
       }
 
       public <T> Optional<T> visit(StringVisitable.StyledVisitor<T> styledVisitor, Style parentStyle) {
@@ -30,13 +30,13 @@ public interface MixinStringVisitable {
 
   /**
    * @author sjx233
-   * @reason Cannot {@code @ModifyVariable}
+   * @reason Cannot {@code @ModifyVariable} in interface
    */
   @Overwrite
   static StringVisitable styled(String str, Style style) {
     return new StringVisitable() {
       public <T> Optional<T> visit(StringVisitable.Visitor<T> visitor) {
-        return visitor.accept(Of.transform(str));
+        return visitor.accept(str);
       }
 
       public <T> Optional<T> visit(StringVisitable.StyledVisitor<T> styledVisitor, Style parentStyle) {
